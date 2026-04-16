@@ -1,0 +1,9 @@
+/ {
+    ps2_0: ps2 {
+        compatible = "zmk,ps2-gpio";
+        label = "PS2_0";
+
+        data-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        clk-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    };
+};
